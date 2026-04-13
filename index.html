@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name · Frontend Dev | 個人品牌網站</title>
-  <meta name="description" content="這是我身為建設公司的個人品牌網站，分享我的背景、技能、作品集與聯絡方式。">
+  <title>Cartier · 建築專案經理 & 自動化開發者 | 個人品牌網站</title>
+  <meta name="description" content="我是具備建築專案管理背景的前端開發者。我擅長將工程管理邏輯轉化為程式碼，曾成功研發專案自動化排程系統，提升時程控管效率。這裡展示我的技術能力、開發作品與跨領域整合經驗，歡迎與我聯繫。">
   <style>
     /* CSS:BASE-START */
     :root {
@@ -51,6 +51,7 @@
       max-width: 100%;
       height: auto;
       display: block;
+      background-color: var(--bg-card); /* 預留載入中的背景色 */
     }
 
     .section {
@@ -218,11 +219,16 @@
       border-radius: 12px;
       overflow: hidden;
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+      background-color: var(--bg-card); /* 載入失敗時的底色 */
+      min-height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     .about-img {
       width: 100%;
-      height: auto;
+      height: 100%;
       object-fit: cover;
       transition: transform 0.3s ease;
     }
@@ -269,6 +275,7 @@
 
       .about-image-box {
         flex: 1;
+        min-height: 400px;
       }
     }
 
@@ -284,7 +291,7 @@
   <div class="page">
     <header class="site-header">
       <div class="container nav">
-        <a href="#hero" class="nav-brand">Your<span class="nav-brand-highlight">Name</span></a>
+        <a href="#hero" class="nav-brand">Car<span class="nav-brand-highlight">tier</span></a>
         <ul class="nav-menu">
           <li><a href="#hero" class="nav-link">首頁</a></li>
           <li><a href="#about" class="nav-link">關於我</a></li>
@@ -299,8 +306,8 @@
       <!-- SECTION:HERO-START -->
       <section id="hero" class="section section-hero">
         <div class="container">
-          <h1 class="hero-title">我是建築專案經理</h1>
-          <p class="hero-placeholder-text">這裡目前是 Cartier 區的占位內容。</p>
+          <h1 class="hero-title">建築經理 & 自動化開發者</h1>
+          <p class="hero-placeholder-text">將營建管理邏輯轉化為自動化解決方案。</p>
           <p class="hero-placeholder-text">之後會用 Section SDD 的 Prompt 產生正式文案與版面，再把整個 section 貼回來取代這一區。</p>
         </div>
       </section>
@@ -315,16 +322,16 @@
             <!-- 文字內容 -->
             <div class="about-content">
               <p class="about-paragraph">
-                你好！我目前為自己的手上專案開發了自動化排程系統。我熱衷於使用 HTML、CSS 與 google Script 打造高效能且直覺的網頁體驗，並持續探索現代技術如 React 與 Tailwind CSS。
+                你好！我目前是一名<strong>建築專案經理</strong>，擁有深厚的營建時程管控背景。我致力於結合實務經驗與程式開發技術，目前正為手上的建築專案獨立開發<strong>「自動化排程系統」</strong>，旨在透過前端技術解決工地管理與資源調度中繁瑣的手動作業。
               </p>
               <p class="about-paragraph">
-                我具備深厚的背景知識，在做事風格上，我<strong>極度重視溝通效率</strong>。我喜歡教學，享受將複雜的邏輯轉化為淺顯易懂的知識，並堅持「把東西講清楚」是所有成功開發專案的基石。
+                我的做事風格深受建築業影響：<strong>嚴謹、精確且極度重視溝通</strong>。我擅長將混亂的需求轉化為結構化的排程邏輯，並喜歡透過技術手段「把東西講清楚」，讓複雜的工程節點能以直觀、透明的方式呈現在開發團隊與利害關係人面前。
               </p>
               
               <ul class="about-highlight-list">
-                <li><strong>高效溝通：</strong> 能精確捕捉需求，將複雜技術轉化為白話語言。</li>
-                <li><strong>高品質交付：</strong> 堅持撰寫乾淨、可維護的程式碼並提供完整的文件說明。</li>
-                <li><strong>靈活應變：</strong> 豐富的接案經驗讓我能快速適應不同規模與風格的專案開發。</li>
+                <li><strong>自動化開發實績：</strong> 成功將複雜的營建排程邏輯代碼化，開發出顯著提升效率的自動化工具。</li>
+                <li><strong>跨領域邏輯整合：</strong> 具備建築現場管理的敏銳度，能精準將業務痛點轉換為技術規格。</li>
+                <li><strong>極致的時程控管：</strong> 習慣於高壓環境下的節點管理，保證開發專案與工程項目皆能準時交付。</li>
               </ul>
 
               <div class="about-actions">
@@ -336,8 +343,8 @@
             <!-- 形象照片 -->
             <div class="about-image-box">
               <img 
-                src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                alt="一名專業的前端工程師正在處理複雜的程式碼開發工作" 
+                src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80" 
+                alt="現代建築物與數位科技線條的結合，象徵建築管理與自動化開發的整合" 
                 class="about-img"
                 loading="lazy"
               >
@@ -377,7 +384,7 @@
 
     <footer class="site-footer">
       <div class="container">
-        <p>&copy; 2026 Your Name. All rights reserved.</p>
+        <p>&copy; 2026 Cartier. All rights reserved.</p>
       </div>
     </footer>
   </div>
